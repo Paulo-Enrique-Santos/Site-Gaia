@@ -1,0 +1,391 @@
+*{
+    transition: 200ms;
+}
+body{
+    margin: 0;
+    font-family: monospace;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #002b2b;
+}
+
+body::-webkit-scrollbar{
+    background-color: #002b2b;
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #d4d4d4;
+    border-radius: 30px;
+    width: 0.7vw;
+}
+
+section{
+    height: 90vh;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+button{
+    border: 0.1vw solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 3vh;
+    font-size: 3vh;
+    height: 5vh;
+    min-width: 10vw;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.navbar{
+    background-color: #002b2b;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    box-sizing: border-box;
+    border-bottom: 0.2vw solid white;
+    z-index: 99;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width: 5vw;
+    cursor: pointer;
+}
+
+.navbar .container ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-size: 3vh;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .container ul img{
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.navbar li{
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+}
+
+.navbar .container li:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+    color:#e5e5e5;
+    filter: drop-shadow(0 0 0.1vw #000000);
+}
+
+button:hover{
+    transform: scale(1.15);
+    background-color: white;
+    color: #002b2b;
+    cursor: pointer;
+    border-color: #002b2b;
+}
+
+.banner{
+    background-image: url(Fotos/background-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 5vh;
+    box-sizing: initial;
+    height: 100%;
+}
+
+.banner .container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner button{
+    width: 25vw;
+    height: 7vh;
+}
+
+.banner p{
+    width: 30vw;
+}
+
+.banner .container .socialmidias{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-flow: row;
+    gap: 0.5vw;
+    padding-bottom: 2%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.banner .container .socialmidias img{
+    height: 7%;
+    width: 13%;
+}
+
+.banner .container .socialmidias img:hover{
+    transform: rotate(10deg);
+}
+
+.sobre {
+    height: 100%;
+}
+
+.sobre .container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre .texto{
+    width: 40vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre .logo{
+    width: 30vw;
+    height: 70%;
+    background-color: #002b2b;
+    box-shadow: 0 0 0.3vw #007979;
+}
+
+.sobre .texto p{
+    font-size: 1.8vw;
+    color: #656565;
+    align-self: center;
+}
+h2{
+    font-size: 3vw;
+    color: #002b2b;
+}
+
+h3{
+    font-size: 1.8vw;
+    color: #002b2b;
+}
+
+.sobre .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.valores{
+    height: 100%;
+    background-color: #e5e5e5;
+}
+
+.valores .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.valores .container .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+}
+
+.valores .container .bloco {
+    background-color: white;
+    height: 75%;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 2vw;
+    box-shadow: 0 0 0.3vw gray;
+}
+
+.valores .container .bloco img{
+    width: 30%;
+}
+
+.valores .container .bloco p{
+    width: 100%;
+    font-size: 1.2vw;
+    color: #656565;
+    line-height: 2vw;
+}
+
+.explic{
+    height: 100%;
+}
+
+.explic .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.explic .container .card{
+    width: 90%;
+    height: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee9c7;
+    filter: drop-shadow(0 0 0.2vw black);
+    padding: 0 5% 0 33%;
+}
+
+.explic .container .foto{
+    position: absolute;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 40vh;
+    height: 70vh;
+    z-index: 98;
+    background-image: url(Fotos/Rectangle\ 13.png);
+    filter: drop-shadow(0 0 0.4vw black);
+    background-size: cover;
+}
+
+.reverse{
+    flex-flow: row-reverse;
+}
+
+#reverse{
+    padding: 0 33% 0 5%;
+}
+
+.card p{
+    width: 100%;
+    font-size: 1.2vw;
+    color: #656565;
+    line-height: 2vw;
+}
+
+.contato{
+    height: 80vh;
+    background-color: #002b2b;
+}
+
+.contato .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato .ctt {
+    height: 80%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctt h2{
+    color: white;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+.ctt h1{
+    color: white;
+    font-size: 3vw;
+}
+
+.contato .form {
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    background-color: #F5F4EA;
+    filter: drop-shadow(0 0 0.4vw black);
+}
+
+form{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+form input{
+    height: 6%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 0.2vh solid #002b2b;
+    outline: none;
+    color: #002b2b;
+    font-size: 1vw;
+}
+
+form textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 0.2vh solid #002b2b;
+    outline: none;
+    height: 20%;
+    color: #002b2b;
+    font-size: 1vw;
+}
+
+form button{
+    background-color: #002b2b;
+}
+
+form input::placeholder{
+    color: #002b2b;
+    font-size: 1vw;
+}
+
+form label{
+    color: #002b2b;
+    font-size: 1vw;
+}
+
+.footer{
+    height: 10vh;
+    background-color: #002b2b;
+    box-sizing: border-box;
+    border-top: 0.2vw solid white;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer h3{
+    color: white;
+}
+
+.ctt h2:hover img{
+    transform:translateY(-1vw);
+}
+
+.bloco:hover{
+    transform: translateY(-3vh);
+    cursor: pointer;
+}
