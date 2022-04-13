@@ -1,6 +1,11 @@
 *{
     transition: 200ms;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: monospace;
@@ -25,6 +30,10 @@ section{
     box-sizing: border-box;
     background-color: white;
 }
+
+:target {
+    scroll-margin-top: 10vh;
+  }
 
 button{
     border: 0.1vw solid white;
